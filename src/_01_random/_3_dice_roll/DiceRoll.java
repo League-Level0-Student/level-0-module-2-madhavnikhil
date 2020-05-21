@@ -31,7 +31,7 @@ public class DiceRoll {
 	public static void main(String[] args) {
 		new DiceRoll().run();
 	}
-	
+ 
 	public void run() {
 		try {
 			oneImg = new ImageIcon(getClass().getResource("dice 1.png"));
