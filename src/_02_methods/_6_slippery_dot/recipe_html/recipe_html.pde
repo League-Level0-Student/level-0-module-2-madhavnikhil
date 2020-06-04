@@ -6,12 +6,15 @@
       int x = 32;
       int y = 21;
       int size = 50;
+     
       
       
     void setup(){
       // 2. Set the size of your sketch
      size (500, 500);
      
+    
+   
     }
     
     void draw() {
@@ -27,6 +30,7 @@
     
     /******** This method gets called automatically when you press the mouse ************/
     void mousePressed() {
+    
       //5. Create an integer variable called distance
       
       //6. The getDistanceFromMouse() method below returns a number.
