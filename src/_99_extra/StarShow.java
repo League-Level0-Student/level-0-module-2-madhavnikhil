@@ -1,6 +1,8 @@
 
 package _99_extra;
 
+import javax.swing.JOptionPane;
+
 import org.jointheleague.graphical.robot.Robot;
 
 /*** Teacher's note ***/
@@ -10,19 +12,20 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class StarShow {
 	
-	Robot robot = new Robot("batman");
+	Robot Gryffindor = new Robot("batman");
 	
 	void makeStars() {
 		
-		drawStar(150);	//5. delete this line. you will draw the star again in step 8.
+		//5. delete this line. you will draw the star again in step 8.
+		
 		// 13. Set the speed to 8
-
+   
 		// 6. Make a variable to hold the X position of the Robot and set it to 10
-
+       int x = 10;
 		// 7. Make a variable to hold the Y position of the Robot and set it to 600
-
+       int y = 600;
 		// 8. Make a variable to hold the star size and set it to 25
-
+       int starSize = 25;
 		// 12. Repeat the steps #19 to #18, 30 times
 
 			// 19. Set the pen width to i 
@@ -47,14 +50,22 @@ public class StarShow {
 
 	private void drawStar(int starSize) {
 		// 2. Put the robot's pen down
-
+        Gryffindor.penDown();
+       
 		// 4. Repeat both commands 5 times. See Figure 1 at http://bit.ly/star-show
-
-			// 1. Move the robot the distance of the starSize variable
+       for (int i = 0; i < 5; i++) {
+    	   
+		
 	
+			// 1. Move the robot the distance of the starSize variable
+	  Gryffindor.move(150);
 			// 3. Turn the robot 144 degrees
-			
+		Gryffindor.turn(144);
+       }	
 	}
+	      
+	  
+				
 	
 	public static void main(String[] args) {
 		new StarShow().makeStars();

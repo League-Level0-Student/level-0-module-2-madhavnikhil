@@ -30,7 +30,7 @@ public class StringsCannotAdd {
 			// Hint: int fourAsInt = Integer.parseInt(fourAsString);
 			
 			// 7) Do the same for sixAsString. 
-			int fourAsInt = Integer.parseInt(fourAsString);
+			int fourAsInt =  Integer.parseInt(fourAsString);
 			int fiveAsInt = Integer.parseInt(fiveAsString);
 			int sixAsInt = Integer.parseInt(sixAsString);
 		
